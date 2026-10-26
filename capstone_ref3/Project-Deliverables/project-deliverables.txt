@@ -1,0 +1,103 @@
+========================================================================
+    FULL STACK APPLICATION DEVELOPMENT CAPSTONE PROJECT IN PYTHON/DJANGO
+               DELIVERABLES AND TASK ARTIFACTS MANUAL
+========================================================================
+
+Author: Lead Full-Stack Software Developer
+Project Name: Full-Stack-Car-Dealer-Capstone-Python-JS
+Forked Repository Name: Full-Stack-Car-Dealer-Capstone-Python-JS
+Deployment URL: https://briangator.github.io/Full-Stack-Car-Dealer-Capstone-Python-JS/
+Backend API URL: https://capstone-developer-3030.theiadocker-3-labs-prod-theia-labs-direct-labs.us-east.containers.appdomain.cloud/
+Frontend App URL: https://capstone-developer-8000.theiadocker-3-labs-prod-theia-labs-direct-labs.us-east.containers.appdomain.cloud/
+
+This folder contains all completed task files, cURL logs, terminal outputs,
+and screenshot references required for the Option 1: AI-Graded Submission and
+Evaluation, as well as Peer Review.
+
+------------------------------------------------------------------------
+INDEX OF ARTIFACTS
+------------------------------------------------------------------------
+
+TASK 1: Repository README Details
+  - File: README.md / Task-1 URL
+  - Public URL: https://github.com/BrianGator/Full-Stack-Car-Dealer-Capstone-Python-JS/blob/main/README.md
+  - Project Title Saved: "fullstack_developer_capstone"
+
+TASK 2: Running Django Server Terminal Outputs
+  - File: /Project-Deliverables/django_server
+  - Contains full startup logs of Python manage.py runserver.
+
+TASK 3: Updated About Us Static Page
+  - File: /server/frontend/static/About.html (referred in Task 3)
+  - Public URL: https://github.com/BrianGator/Full-Stack-Car-Dealer-Capstone-Python-JS/blob/main/server/frontend/static/About.html
+  - Description: Contains accurate CSS links to style.css, bootstrap, and modern responsive dealer info cards.
+
+TASK 4: Updated Contact Us Static Page
+  - File: /server/frontend/static/Contact.html (referred in Task 4)
+  - Public URL: https://github.com/BrianGator/Full-Stack-Car-Dealer-Capstone-Python-JS/blob/main/server/frontend/static/Contact.html
+  - Description: Active Contact Us navigation element, elegant map placeholders, real contact details.
+
+TASK 5: User Login Session API Log
+  - File: /Project-Deliverables/loginuser
+  - Contains POST API request logging in the user 'admin'.
+
+TASK 6: User Logout Session API Log
+  - File: /Project-Deliverables/logoutuser
+  - Contains GET API request terminating the session token.
+
+TASK 7: React SignUp Module Source
+  - File: /server/frontend/src/components/Register/Register.jsx (referred in Task 7)
+  - Public URL: https://github.com/BrianGator/Full-Stack-Car-Dealer-Capstone-Python-JS/blob/main/server/frontend/src/components/Register/Register.jsx
+  - Description: SignUp JSX displaying 5 inputs with field status.
+
+TASK 8: Dealer Reviews Service Call
+  - File: /Project-Deliverables/getdealerreviews
+  - Contains cURL GET fetching reviews for dealer ID 15 of Topeka Kansas.
+
+TASK 9: Dealership Index Retrieval
+  - File: /Project-Deliverables/getalldealers
+  - Contains cURL GET fetching list of all 50 national dealerships.
+
+TASK 10: Specific Dealer Information
+  - File: /Project-Deliverables/getdealerbyid
+  - Contains cURL GET fetching unique card details for dealer ID 15.
+
+TASK 11: Dealership Filter State Service
+  - File: /Project-Deliverables/getdealersbyState
+  - Contains cURL GET filtering dealers only to the state of Kansas.
+
+TASK 12 & 13: Administrator Portal Authentication
+  - Files: /Project-Deliverables/admin_login.png, /Project-Deliverables/admin_logout.png
+  - Describes: Django Admin log-in state validating root user and subsequent sign-out.
+
+TASK 14 & 15: Database Cars Model Catalog Listing
+  - File: /Project-Deliverables/getallcarmakes
+  - Fetches SQLite CarMake & CarModel relations mapping the fleet.
+
+TASK 16: Microservice Sentiment Analysis
+  - File: /Project-Deliverables/analyzereview
+  - Submits review text "Fantastic services" and receives positive sentiment result.
+
+TASK 17, 18 & 19: National Dealership Index Views
+  - Files: /Project-Deliverables/get_dealers.png, /Project-Deliverables/get_dealers_loggedin.png, /Project-Deliverables/dealersbystate.png
+  - Highlights state filtering UI, Review button activation state when user session is active.
+
+TASK 20, 21 & 22: Review Operations Workflow
+  - Files: /Project-Deliverables/dealer_id_reviews.png, /Project-Deliverables/dealership_review_submission.png, /Project-Deliverables/added_review.png
+  - Highlights posting form validations, date selection, models pairing, and live update rendering.
+
+TASK 23: Continuous Integration (CI/CD) Output logs
+  - File: /Project-Deliverables/CICD
+  - GitHub actions output verifying successful builds, flake8 rules, and unit tests.
+
+TASK 24: Application Production Endpoint Reference Address
+  - File: /Project-Deliverables/deploymentURL
+  - Contains Cloud Run / Code Engine URL string.
+
+TASK 25, 26, 27 & 28: Live Production Deployment System Verification
+  - Files: /Project-Deliverables/deployed_landingpage.png, /Project-Deliverables/deployed_loggedin.png, /Project-Deliverables/deployed_dealer_detail.png, /Project-Deliverables/deployed_add_review.png
+  - Highlights functional and visual performance in live environment.
+
+========================================================================
+                         DOCUMENT END - CAPSTONE
+========================================================================

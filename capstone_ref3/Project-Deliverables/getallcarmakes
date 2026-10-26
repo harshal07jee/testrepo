@@ -1,0 +1,48 @@
+curl -X GET "https://capstone-developer-8000.theiadocker-3-labs-prod-theia-labs-direct-labs.us-east.containers.appdomain.cloud/djangoapp/get_cars"
+
+{
+  "CarModels": [
+    {
+      "id": 1,
+      "make": "Audi",
+      "model": "A6",
+      "type": "SEDAN",
+      "year": 2010
+    },
+    {
+      "id": 2,
+      "make": "Audi",
+      "model": "Q7",
+      "type": "SUV",
+      "year": 2018
+    },
+    {
+      "id": 3,
+      "make": "Audi",
+      "model": "A4",
+      "type": "SEDAN",
+      "year": 2015
+    },
+    {
+      "id": 4,
+      "make": "Toyota",
+      "model": "Camry",
+      "type": "SEDAN",
+      "year": 2021
+    },
+    {
+      "id": 5,
+      "make": "Toyota",
+      "model": "RAV4",
+      "type": "SUV",
+      "year": 2022
+    },
+    {
+      "id": 6,
+      "make": "Toyota",
+      "model": "Sienna",
+      "type": "WAGON",
+      "year": 2020
+    }
+  ]
+}

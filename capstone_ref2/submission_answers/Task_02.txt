@@ -1,0 +1,13 @@
+TASK 2: Django server output
+
+Requirement:
+Paste the actual terminal output saved in django_server showing Django's development server running.
+
+Answer / evidence reference:
+[PASTE REAL OUTPUT: e.g. Starting development server at http://127.0.0.1:8000/]
+
+Before submitting:
+- Replace all placeholders with your real result.
+- For GitHub URL tasks, ensure the repository and file are public and the URL opens.
+- For cURL tasks, include both the exact command and complete real response.
+- For screenshot tasks, attach the actual screenshot in Coursera; a filename alone is not the screenshot.

@@ -1,0 +1,2 @@
+TASK 24 — deploymentURL
+The grader rejected Code Engine. Copy the actual Theia proxy URL for port 8000 from your course lab; it should use the lab's `theiadockernext-labs-prod-theiak8s` proxy host and include port 8000 (often represented as `-8000` in the hostname). Do not guess the host.

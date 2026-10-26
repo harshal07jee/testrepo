@@ -1,0 +1,6 @@
+TASK 6 — logoutuser
+Required method and endpoint:
+curl -X GET http://127.0.0.1:8000/djangoapp/logout
+Expected response shape per grader (illustrative only; paste actual output):
+{"userName":""}
+Use GET, not POST, and preserve the real response.

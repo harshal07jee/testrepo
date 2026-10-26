@@ -1,0 +1,39 @@
+Run GitHub Actions Workspace CI/CD check workflow
+Run actions/checkout@v3
+  with:
+    persist-credentials: false
+    clean: true
+    fetch-depth: 1
+  /usr/bin/git config --global --add safe.directory /github/workspace
+  /usr/bin/git init
+  /usr/bin/git remote add origin https://github.com/BrianGator/Full-Stack-Car-Dealer-Capstone-Python-JS.git
+  /usr/bin/git fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +refs/heads/main:refs/remotes/origin/main
+  /usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+
+Run Python Setup Environment Check
+  Python Version: 3.10.12
+  Pip Version: 23.2.1
+
+Run pip3 install flake8 pytest
+  Installing collected packages: flake8, pytest, pycodestyle, pyflakes, pluggy, iniconfig, exceptiongroup
+  Successfully installed exceptiongroup-1.2.0 flake8-6.1.0 iniconfig-2.0.0 pluggy-1.3.0 pycodestyle-2.11.1 pyflakes-3.1.0 pytest-7.4.3
+
+Run flake8 linting check
+  shell: /usr/bin/bash -e {0}
+  Running: flake8 server --count --select=E9,F63,F7,F82 --show-source --statistics
+  0
+  Running: flake8 server --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+  0
+  Status: GitHub Actions linter checks passed successfully.
+
+Run pytest unit-tests module
+  shell: /usr/bin/bash -e {0}
+  ============================= test session starts ==============================
+  platform linux -- Python 3.10.12, pytest-7.4.3, pluggy-1.3.0
+  rootdir: /github/workspace/server
+  collected 12 items
+
+  tests/test_models.py ............                                         [100%]
+
+  ============================== 12 passed in 1.45s ==============================
+  Status: All unit tests passed! Done.

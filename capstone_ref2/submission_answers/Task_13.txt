@@ -1,0 +1,13 @@
+TASK 13: Admin logout screenshot
+
+Requirement:
+Attach admin_logout.png or admin_logout.jpeg showing root user logged out from admin page.
+
+Answer / evidence reference:
+Save genuine screenshot as evidence/screenshots/admin_logout.png
+
+Before submitting:
+- Replace all placeholders with your real result.
+- For GitHub URL tasks, ensure the repository and file are public and the URL opens.
+- For cURL tasks, include both the exact command and complete real response.
+- For screenshot tasks, attach the actual screenshot in Coursera; a filename alone is not the screenshot.

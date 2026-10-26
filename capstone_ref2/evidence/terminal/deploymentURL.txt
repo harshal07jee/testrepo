@@ -1,0 +1,1 @@
+TASK 24\nPaste your actual Theia proxy URL for port 8000 here. The grader requires the course theiadockernext-labs-prod-theiak8s proxy host and port 8000 (often -8000 in hostname). Copy it from your active lab; do not guess.

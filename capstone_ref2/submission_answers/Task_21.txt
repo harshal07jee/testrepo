@@ -1,0 +1,2 @@
+TASK 21 — dealership_review_submission.png
+The prior screenshot missed required fields. Capture the real form BEFORE submission with reviewer name, rating, review text, purchase date, car make, car year, and the Submit Review button visible. Save as evidence/screenshots/dealership_review_submission.png.

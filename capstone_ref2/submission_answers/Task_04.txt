@@ -1,0 +1,4 @@
+TASK 4 — Contact.html URL
+Required path: server/frontend/static/Contact.html
+URL pattern: https://github.com/YOUR_GITHUB_USERNAME/xrwvm-fullstack_developer_capstone/blob/main/server/frontend/static/Contact.html
+Include /static/style.css, /static/bootstrap.min.css, Contact Us as active navigation, an image, and contact details.

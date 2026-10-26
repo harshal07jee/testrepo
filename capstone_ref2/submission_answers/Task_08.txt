@@ -1,0 +1,3 @@
+TASK 8 — getdealerreviews
+Required command: curl -X GET http://127.0.0.1:8000/fetchReviews/dealer/1
+The real response must include car_year as well as review/purchase fields. Paste the full output from your running app; do not invent records.

@@ -1,0 +1,13 @@
+TASK 28: deployed_add_review screenshot
+
+Requirement:
+Show the posted review in the deployed application.
+
+Answer / evidence reference:
+Save genuine screenshot as evidence/screenshots/deployed_add_review.png
+
+Before submitting:
+- Replace all placeholders with your real result.
+- For GitHub URL tasks, ensure the repository and file are public and the URL opens.
+- For cURL tasks, include both the exact command and complete real response.
+- For screenshot tasks, attach the actual screenshot in Coursera; a filename alone is not the screenshot.

@@ -1,0 +1,5 @@
+TASK 7 — Register.jsx URL
+Required repository: xrwvm-fullstack_developer_capstone
+Required path: server/frontend/src/components/Register/Register.jsx
+URL pattern: https://github.com/YOUR_GITHUB_USERNAME/xrwvm-fullstack_developer_capstone/blob/main/server/frontend/src/components/Register/Register.jsx
+Ensure the file has Username, First Name, Last Name, Email, Password, and Register button.

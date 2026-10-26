@@ -1,0 +1,2 @@
+TASK 22 — added_review.png
+Capture the real posted review and its associated happy, sad, or neutral sentiment image together. Save as evidence/screenshots/added_review.png.

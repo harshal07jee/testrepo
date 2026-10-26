@@ -1,0 +1,1 @@
+TASK 6\nRun: curl -X GET http://127.0.0.1:8000/djangoapp/logout\nExpected shape per grader: {"userName":""}. Paste actual output here.

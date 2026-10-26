@@ -1,0 +1,32 @@
+curl -X GET "https://capstone-developer-3030.theiadocker-3-labs-prod-theia-labs-direct-labs.us-east.containers.appdomain.cloud/fetchReviews/dealer/15"
+
+[
+  {
+    "_id": "64bc7a5fb1d20011a0ea4c13",
+    "id": 1,
+    "name": "Berkly Shepley",
+    "dealership": 15,
+    "review": "Total grid-enabled service-desk. The service was fast and the sales representatives were very knowledgeable.",
+    "time": "2026-05-28T22:30:15.000Z",
+    "purchase": true,
+    "purchase_date": "07/11/2020",
+    "car_make": "Audi",
+    "car_model": "A6",
+    "car_year": 2010,
+    "sentiment": "positive"
+  },
+  {
+    "_id": "64bc7a5fb1d20011a0ea4c14",
+    "id": 2,
+    "name": "Gawain Dunnan",
+    "dealership": 15,
+    "review": "Decent collection and average customer care. Negotiations took slightly longer than expected.",
+    "time": "2026-05-28T20:15:30.000Z",
+    "purchase": false,
+    "purchase_date": "",
+    "car_make": "",
+    "car_model": "",
+    "car_year": 0,
+    "sentiment": "neutral"
+  }
+]

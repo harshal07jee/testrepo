@@ -1,0 +1,3 @@
+curl -X GET "https://capstone-developer-8000.theiadocker-3-labs-prod-theia-labs-direct-labs.us-east.containers.appdomain.cloud/djangoapp/logout"
+
+{"userName": ""}

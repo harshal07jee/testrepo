@@ -1,0 +1,5 @@
+curl -X POST "https://capstone-developer-8000.theiadocker-3-labs-prod-theia-labs-direct-labs.us-east.containers.appdomain.cloud/djangoapp/login" \
+  -H "Content-Type: application/json" \
+  -d '{"userName": "admin", "password": "rootpassword"}'
+
+{"userName": "admin", "status": "Authenticated"}

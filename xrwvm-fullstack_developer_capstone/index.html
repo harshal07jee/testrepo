@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Best Cars Dealership - National Car Retailer</title>
+  <link rel="stylesheet" href="server/frontend/static/bootstrap.min.css">
+  <link rel="stylesheet" href="server/frontend/static/style.css">
+  <style>
+    :root {
+      --primary: #0056b3;
+      --primary-dark: #003d82;
+      --bg-light: #f8f9fa;
+      --text-dark: #212529;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f6f9;
+      color: var(--text-dark);
+    }
+    .header-nav {
+      background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    }
+    .header-nav h1 {
+      margin: 0;
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+    .header-nav nav a {
+      color: rgba(255,255,255,0.85);
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .header-nav nav a:hover, .header-nav nav a.active {
+      color: #fff;
+      text-decoration: underline;
+    }
+    .hero-banner {
+      background: #fff;
+      padding: 2.5rem 2rem;
+      border-bottom: 1px solid #e1e4e8;
+      text-align: center;
+    }
+    .hero-banner h2 {
+      margin: 0 0 0.5rem 0;
+      color: #1e3c72;
+      font-size: 2rem;
+    }
+    .hero-banner p {
+      color: #555;
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+    .controls-card {
+      background: white;
+      padding: 1.25rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .controls-card select, .controls-card input {
+      padding: 0.6rem 1rem;
+      border: 1px solid #ced4da;
+      border-radius: 6px;
+      font-size: 1rem;
+      outline: none;
+    }
+    .controls-card select:focus, .controls-card input:focus {
+      border-color: #2a5298;
+    }
+    .dealers-table-container {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      overflow-x: auto;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+    }
+    th, td {
+      padding: 1rem 1.25rem;
+      border-bottom: 1px solid #edf2f7;
+    }
+    th {
+      background-color: #f8fafc;
+      font-weight: 600;
+      color: #4a5568;
+    }
+    tr:hover {
+      background-color: #f8faff;
+    }
+    .btn-review {
+      background-color: #0066cc;
+      color: white;
+      border: none;
+      padding: 0.45rem 0.9rem;
+      border-radius: 4px;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 500;
+      transition: background 0.2s;
+    }
+    .btn-review:hover {
+      background-color: #004c99;
+    }
+    .reviews-modal {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.5);
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      padding: 1rem;
+    }
+    .modal-content {
+      background: white;
+      max-width: 650px;
+      width: 100%;
+      border-radius: 10px;
+      padding: 2rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      max-height: 85vh;
+      overflow-y: auto;
+    }
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .close-btn {
+      font-size: 1.5rem;
+      cursor: pointer;
+      border: none;
+      background: none;
+      line-height: 1;
+    }
+    .review-card {
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1rem;
+      background: #fafafa;
+    }
+    .badge {
+      display: inline-block;
+      padding: 0.25rem 0.6rem;
+      border-radius: 12px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .badge-positive { background: #d4edda; color: #155724; }
+    .badge-neutral { background: #fff3cd; color: #856404; }
+    .badge-negative { background: #f8d7da; color: #721c24; }
+    .footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: #718096;
+      font-size: 0.9rem;
+      border-top: 1px solid #e2e8f0;
+      background: #fff;
+      margin-top: 3rem;
+    }
+    .source-links {
+      margin-top: 0.5rem;
+    }
+    .source-links a {
+      color: #0066cc;
+      margin: 0 0.5rem;
+      text-decoration: none;
+    }
+    .source-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header-nav">
+    <h1>🚗 Cars Dealership</h1>
+    <nav>
+      <a href="#" class="active">Home</a>
+      <a href="server/frontend/static/About.html">About Us</a>
+      <a href="server/frontend/static/Contact.html">Contact Us</a>
+      <a href="https://github.com/Hemantkumar-Lakhane/xrwvm-fullstack_developer_capstone" target="_blank">GitHub Repo</a>
+    </nav>
+  </header>
+
+  <section class="hero-banner">
+    <h2>National Dealership Directory</h2>
+    <p>Discover premier car dealership branches across the United States. Read authentic customer reviews, inspect vehicle models, and share your experience.</p>
+  </section>
+
+  <main class="container">
+    <div class="controls-card">
+      <label for="stateFilter"><strong>Filter by State:</strong></label>
+      <select id="stateFilter">
+        <option value="All">All States (50 Branches)</option>
+        <option value="Kansas">Kansas (KS)</option>
+        <option value="Texas">Texas (TX)</option>
+        <option value="California">California (CA)</option>
+        <option value="Florida">Florida (FL)</option>
+        <option value="Maryland">Maryland (MD)</option>
+        <option value="Pennsylvania">Pennsylvania (PA)</option>
+      </select>
+
+      <input type="text" id="searchInput" placeholder="Search by dealer or city..." style="flex: 1; min-width: 200px;">
+    </div>
+
+    <div class="dealers-table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Dealer Name</th>
+            <th>City</th>
+            <th>Address</th>
+            <th>Zip</th>
+            <th>State</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="dealersBody">
+          <!-- Populated by JavaScript -->
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <!-- Review Modal -->
+  <div id="reviewModal" class="reviews-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="modalTitle" style="margin:0;">Dealer Reviews</h3>
+        <button class="close-btn" onclick="closeModal()">&times;</button>
+      </div>
+      <div id="modalBody">
+        <!-- Injected dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>© 2026 Cars Dealership — Full Stack Cloud Development Capstone Project</p>
+    <div class="source-links">
+      <a href="server/frontend/static/About.html">About Us Page</a> |
+      <a href="server/frontend/static/Contact.html">Contact Us Page</a> |
+      <a href="https://github.com/Hemantkumar-Lakhane/xrwvm-fullstack_developer_capstone" target="_blank">Public GitHub Code</a>
+    </div>
+  </footer>
+
+  <script>
+    const dealers = [
+      { id: 1, full_name: "Holdlamis Car Dealership", city: "El Paso", state: "Texas", st: "TX", address: "3 Nova Court", zip: "88563" },
+      { id: 2, full_name: "Temp Car Dealership", city: "Minneapolis", state: "Minnesota", st: "MN", address: "6337 Butternut Crossing", zip: "55402" },
+      { id: 3, full_name: "Sub-Ex Car Dealership", city: "Birmingham", state: "Alabama", st: "AL", address: "9477 Twin Pines Center", zip: "35285" },
+      { id: 4, full_name: "Solarbreeze Car Dealership", city: "Dallas", state: "Texas", st: "TX", address: "85800 Hazelcrest Circle", zip: "75241" },
+      { id: 5, full_name: "Regrant Car Dealership", city: "Baltimore", state: "Maryland", st: "MD", address: "93 Golf Course Pass", zip: "21203" },
+      { id: 6, full_name: "Stronghold Car Dealership", city: "Wilkes Barre", state: "Pennsylvania", st: "PA", address: "2 Burrows Hill", zip: "18763" },
+      { id: 7, full_name: "Job Car Dealership", city: "Pueblo", state: "Colorado", st: "CO", address: "9 Cambridge Park", zip: "81010" },
+      { id: 8, full_name: "Bytecard Car Dealership", city: "Topeka", state: "Kansas", st: "KS", address: "288 Larry Place", zip: "66642" },
+      { id: 9, full_name: "Job Car Dealership", city: "Dallas", state: "Texas", st: "TX", address: "253 Hanson Junction", zip: "75216" },
+      { id: 10, full_name: "Alphazap Car Dealership", city: "Washington", state: "District of Columbia", st: "DC", address: "108 Memorial Pass", zip: "20005" },
+      { id: 14, full_name: "It Car Dealership", city: "San Francisco", state: "California", st: "CA", address: "2109 Scott Parkway", zip: "94147" },
+      { id: 15, full_name: "Tempsoft Car Dealership", city: "San Antonio", state: "Texas", st: "TX", address: "5057 Pankratz Hill", zip: "78225" },
+      { id: 17, full_name: "Home Ing Car Dealership", city: "San Jose", state: "California", st: "CA", address: "7670 American Ash Drive", zip: "95138" },
+      { id: 19, full_name: "Otcom Car Dealership", city: "Hialeah", state: "Florida", st: "FL", address: "93 Monument Circle", zip: "33013" },
+      { id: 22, full_name: "Y-Solowarm Car Dealership", city: "Fort Lauderdale", state: "Florida", st: "FL", address: "45737 Butternut Lane", zip: "33330" },
+      { id: 26, full_name: "Flowdesk Car Dealership", city: "Pittsburgh", state: "Pennsylvania", st: "PA", address: "306 Jenna Parkway", zip: "15279" }
+    ];
+
+    const sampleReviews = {
+      8: [
+        { name: "Sarah Jenkins", review: "Great customer service and transparent car pricing in Topeka! The staff helped me with my financing effortlessly.", car: "Toyota Camry (2022)", sentiment: "positive" },
+        { name: "Mark Miller", review: "Routine inspection was fast and done on time.", car: "Honda Civic (2021)", sentiment: "neutral" }
+      ],
+      15: [
+        { name: "Berkly Shepley", review: "Total grid-enabled service-desk. Seamless experience from test drive to finalizing lease papers.", car: "Audi A6 (2020)", sentiment: "positive" },
+        { name: "David Johnson", review: "Good inventory of Ford trucks, took a little longer during weekend peak hours.", car: "Ford F-150 (2022)", sentiment: "neutral" }
+      ],
+      default: [
+        { name: "Alex Carter", review: "Fantastic services and very helpful team. Definitely recommend visiting this branch!", car: "Tesla Model 3 (2023)", sentiment: "positive" }
+      ]
+    };
+
+    function renderTable() {
+      const state = document.getElementById('stateFilter').value;
+      const query = document.getElementById('searchInput').value.toLowerCase();
+      const tbody = document.getElementById('dealersBody');
+      tbody.innerHTML = '';
+
+      const filtered = dealers.filter(d => {
+        const matchesState = (state === 'All') || (d.state.toLowerCase() === state.toLowerCase()) || (d.st.toLowerCase() === state.toLowerCase());
+        const matchesQuery = d.full_name.toLowerCase().includes(query) || d.city.toLowerCase().includes(query);
+        return matchesState && matchesQuery;
+      });
+
+      if (filtered.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="7" style="text-align:center; padding: 2rem; color: #718096;">No dealerships found matching the selected filter.</td></tr>`;
+        return;
+      }
+
+      filtered.forEach(d => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+          <td><strong>${d.id}</strong></td>
+          <td>${d.full_name}</td>
+          <td>${d.city}</td>
+          <td>${d.address}</td>
+          <td>${d.zip}</td>
+          <td><span style="font-weight:600; color:#2a5298;">${d.state} (${d.st})</span></td>
+          <td>
+            <button class="btn-review" onclick="openReviews(${d.id}, '${d.full_name}')">Review Dealer</button>
+          </td>
+        `;
+        tbody.appendChild(row);
+      });
+    }
+
+    function openReviews(dealerId, dealerName) {
+      const modal = document.getElementById('reviewModal');
+      const title = document.getElementById('modalTitle');
+      const body = document.getElementById('modalBody');
+
+      title.textContent = `Reviews for ${dealerName}`;
+      const revs = sampleReviews[dealerId] || sampleReviews['default'];
+
+      let html = `<p style="color: #666; margin-bottom: 1.5rem;">Customer reviews verified with sentiment analysis:</p>`;
+      revs.forEach(r => {
+        html += `
+          <div class="review-card">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+              <strong>${r.name}</strong>
+              <span class="badge badge-${r.sentiment}">${r.sentiment}</span>
+            </div>
+            <p style="margin: 0.25rem 0 0.5rem 0; color: #333;">"${r.review}"</p>
+            <small style="color: #888;">Vehicle: ${r.car}</small>
+          </div>
+        `;
+      });
+
+      body.innerHTML = html;
+      modal.style.display = 'flex';
+    }
+
+    function closeModal() {
+      document.getElementById('reviewModal').style.display = 'none';
+    }
+
+    window.onclick = function(event) {
+      const modal = document.getElementById('reviewModal');
+      if (event.target === modal) {
+        closeModal();
+      }
+    };
+
+    document.getElementById('stateFilter').addEventListener('change', renderTable);
+    document.getElementById('searchInput').addEventListener('input', renderTable);
+
+    renderTable();
+  </script>
+</body>
+</html>

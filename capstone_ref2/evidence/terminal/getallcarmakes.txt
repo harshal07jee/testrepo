@@ -1,0 +1,1 @@
+TASKS 14–15\ncurl -X GET http://127.0.0.1:8000/djangoapp/get_cars\nRequired response shape: {"CarModels":[{"CarMake":"...","CarModel":"..."}]}; paste the complete actual list (about 15 pairs).

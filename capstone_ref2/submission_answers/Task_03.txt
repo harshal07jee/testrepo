@@ -1,0 +1,4 @@
+TASK 3 — About.html URL
+Required path: server/frontend/static/About.html
+URL pattern: https://github.com/YOUR_GITHUB_USERNAME/xrwvm-fullstack_developer_capstone/blob/main/server/frontend/static/About.html
+Include both /static/style.css and /static/bootstrap.min.css, images, team names, roles, short descriptions, and email addresses. Verify the path in your actual repository.

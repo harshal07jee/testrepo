@@ -1,0 +1,22 @@
+(djangoenv) user@theia-host:~/Full-Stack-Car-Dealer-Capstone-Python-JS/server$ python3 manage.py runserver 0.0.0.0:8000
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 28, 2026 - 23:10:00
+Django version 4.2.14, using settings 'djangoproj.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+[28/May/2026 23:10:15] "GET / HTTP/1.1" 200 4820
+[28/May/2026 23:10:16] "GET /static/style.css HTTP/1.1" 200 1204
+[28/May/2026 23:10:16] "GET /static/bootstrap.min.css HTTP/1.1" 200 142023
+[28/May/2026 23:10:20] "GET /about/ HTTP/1.1" 200 3512
+[28/May/2026 23:10:25] "GET /contact/ HTTP/1.1" 200 2930
+[28/May/2026 23:11:02] "POST /djangoapp/login HTTP/1.1" 200 45
+[28/May/2026 23:11:45] "GET /djangoapp/get_dealers HTTP/1.1" 200 3582
+[28/May/2026 23:12:12] "GET /djangoapp/get_dealers/Kansas HTTP/1.1" 200 422
+[28/May/2026 23:12:35] "GET /djangoapp/dealer/15 HTTP/1.1" 200 435
+[28/May/2026 23:13:02] "GET /djangoapp/reviews/dealer/15 HTTP/1.1" 200 1205
+[28/May/2026 23:15:10] "POST /djangoapp/add_review HTTP/1.1" 200 92
+[28/May/2026 23:16:04] "GET /djangoapp/logout HTTP/1.1" 200 18

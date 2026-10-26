@@ -1,0 +1,6 @@
+{
+  "name": "Full-Stack-Car-Dealer-Capstone-Python-JS",
+  "description": "Full Stack Application Development Capstone Project artifacts including server configurations, REST endpoints, user management, and CI/CD pipelines.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

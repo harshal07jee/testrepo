@@ -1,0 +1,13 @@
+filename,task,what_must_be_visible
+admin_login.png,12,Root user logged in to admin page
+admin_logout.png,13,Root user logged out from admin page
+get_dealers.png,17,Dealers on Django homepage before login
+get_dealers_loggedin.png,18,Dealers after login; Review Dealer; username; endpoint in address bar
+dealersbystate.png,19,Dealers filtered by state; endpoint in address bar
+dealer_id_reviews.png,20,Dealer details and reviews; endpoint in address bar
+dealership_review_submission.png,21,Review details entered before submission
+added_review.png,22,Successfully posted review
+deployed_landingpage.png,25,Deployed landing page
+deployed_loggedin.png,26,Deployed logged-in page with username
+deployed_dealer_detail.png,27,Dealer details page on deployment
+deployed_add_review.png,28,Review displayed in deployed application

@@ -1,0 +1,5 @@
+TASK 1 — README GitHub URL
+Required repository: xrwvm-fullstack_developer_capstone
+Required project name: fullstack_developer_capstone
+URL pattern: https://github.com/YOUR_GITHUB_USERNAME/xrwvm-fullstack_developer_capstone/blob/main/README.md
+Replace the username and verify the public URL opens.

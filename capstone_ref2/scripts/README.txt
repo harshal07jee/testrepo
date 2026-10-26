@@ -1,0 +1,1 @@
+Corrected endpoint reference from the evaluation feedback. Start your own Django server first. Save actual responses from the running app. On Windows PowerShell, use the one-line commands in curl_examples.sh. The JSON output can vary by course version, so don't submit fabricated output.

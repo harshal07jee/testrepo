@@ -1,0 +1,1 @@
+TASK 8\ncurl -X GET http://127.0.0.1:8000/fetchReviews/dealer/1\nEnsure actual response includes car_year. Paste complete real output here.

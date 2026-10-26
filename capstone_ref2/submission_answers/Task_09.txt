@@ -1,0 +1,3 @@
+TASK 9 — getalldealers
+Required command: curl -X GET http://127.0.0.1:8000/fetchDealers
+Paste all 50 actual dealers with id, full_name, short_name, city, state, address, zip, lat, and long. Do not submit only two entries.

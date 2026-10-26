@@ -1,0 +1,13 @@
+TASK 26: deployed_loggedin screenshot
+
+Requirement:
+Show deployed logged-in page with username visible.
+
+Answer / evidence reference:
+Save genuine screenshot as evidence/screenshots/deployed_loggedin.png
+
+Before submitting:
+- Replace all placeholders with your real result.
+- For GitHub URL tasks, ensure the repository and file are public and the URL opens.
+- For cURL tasks, include both the exact command and complete real response.
+- For screenshot tasks, attach the actual screenshot in Coursera; a filename alone is not the screenshot.

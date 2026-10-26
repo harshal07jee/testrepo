@@ -1,0 +1,4 @@
+TASKS 14–15 — getallcarmakes
+Command accepted by grader: curl -X GET http://127.0.0.1:8000/djangoapp/get_cars
+Required response shape is a CarModels array of individual make/model pairs, approximately 15 rows, e.g. {"CarModels":[{"CarMake":"ACTUAL_MAKE","CarModel":"ACTUAL_MODEL"}]}.
+This is a schema example only. Paste the complete real API response; do not fabricate rows.

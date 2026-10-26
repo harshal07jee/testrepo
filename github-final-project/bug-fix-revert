@@ -1,0 +1,13 @@
+$ curl -s https://api.github.com/repos/ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub/pulls/12669 | grep -E '"(html_url|state|full_name|merged)":'
+  "html_url": "https://github.com/ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub/pull/12669",
+  "state": "closed",
+    "html_url": "https://github.com/Hemantkumar-Lakhane",
+      "full_name": "Hemantkumar-Lakhane/mcino-Introduction-to-Git-and-GitHub",
+        "html_url": "https://github.com/Hemantkumar-Lakhane",
+      "html_url": "https://github.com/Hemantkumar-Lakhane/mcino-Introduction-to-Git-and-GitHub",
+      "html_url": "https://github.com/Hemantkumar-Lakhane",
+      "full_name": "ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub",
+        "html_url": "https://github.com/ibm-developer-skills-network",
+      "html_url": "https://github.com/ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub",
+      "html_url": "https://github.com/ibm-developer-skills-network",
+  "merged": false,

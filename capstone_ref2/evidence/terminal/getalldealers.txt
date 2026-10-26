@@ -1,0 +1,1 @@
+TASK 9\ncurl -X GET http://127.0.0.1:8000/fetchDealers\nPaste all 50 actual dealers including short_name, lat, long.

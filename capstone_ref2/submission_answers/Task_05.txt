@@ -1,0 +1,6 @@
+TASK 5 — loginuser
+Run with a valid account:
+curl -X POST http://127.0.0.1:8000/djangoapp/login -H "Content-Type: application/json" -d "{\"userName\":\"YOUR_VALID_USERNAME\",\"password\":\"YOUR_VALID_PASSWORD\"}"
+Expected response shape per grader (illustrative only; paste actual output):
+{"userName":"YOUR_VALID_USERNAME","status":"Authenticated"}
+Use the exact field userName, not username. Do not submit sample JSON as actual output.
