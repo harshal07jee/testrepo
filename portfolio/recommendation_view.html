@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Recommendations - Harshal Ingle</title>
+  <link rel="stylesheet" href="./style.css"/>
+  <style>
+    body {
+      background-color: #f7fafc;
+      padding: 20px;
+    }
+    #recommendations {
+      margin-top: 10px;
+    }
+    .popup-preview {
+      margin: 30px auto;
+      max-width: 450px;
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      text-align: center;
+      border: 2px solid #217979;
+    }
+    .popup-preview img {
+      width: 50px;
+    }
+    .popup-preview h3 {
+      color: #1d5a83;
+      margin: 15px 0;
+    }
+    .popup-preview button {
+      background-color: #217979;
+      color: white;
+      border: none;
+      padding: 10px 25px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .badge-new {
+      display: inline-block;
+      background-color: #2e7d32;
+      color: white;
+      font-size: 11px;
+      font-weight: bold;
+      padding: 3px 8px;
+      border-radius: 12px;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+    }
+    .recommendation.newly-added {
+      border: 2px solid #2e7d32;
+      background-color: #e8f5e9;
+    }
+  </style>
+</head>
+<body>
+  <!-- Recommendations Section -->
+  <section id="recommendations">
+    <h2>Recommendations</h2>
+    <div style="clear:both;"></div>
+    <div class="all_recommendations" id="all_recommendations">
+      <div class="recommendation">
+        <span>&#8220;</span>
+        Harshal is a brilliant developer who consistently delivers high-quality code. His ability to architect scalable solutions and problem-solve complex issues is remarkable.
+        <span>&#8221;</span>
+      </div>
+      <div class="recommendation">
+        <span>&#8220;</span>
+        Working with Harshal has been an outstanding experience. He brings incredible passion, technical excellence, and dedication to every project he takes on.
+        <span>&#8221;</span>
+      </div>
+      <div class="recommendation">
+        <span>&#8220;</span>
+        A dependable, proactive engineer with exceptional front-end and back-end skills. Harshal's attention to detail and team collaboration make him an invaluable asset.
+        <span>&#8221;</span>
+      </div>
+      <div class="recommendation newly-added">
+        <span class="badge-new">New</span><br/>
+        <span>&#8220;</span>
+        Harshal is an extraordinary team player whose problem-solving abilities and dedication brought immense success to our projects. Highly recommended!
+        <span>&#8221;</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Success Popup Notification -->
+  <div class="popup-preview">
+    <img src="html_finalprojimages/checkmark--outline.svg" alt="Success"/>
+    <h3>Thanks for leaving a recommendation!</h3>
+    <button>Ok</button>
+  </div>
+
+  <!-- Recommendation Form -->
+  <section id="contact">
+    <div class="flex_center">
+      <fieldset>
+        <legend class="introduction">Leave a Recommendation</legend>
+        <input type="text" placeholder="Name (Optional)" value="John Smith"> <br/>
+        <textarea id="new_recommendation" cols="500" rows="4" placeholder="Message"></textarea>
+        <div class="flex_center">
+          <button id="recommend_btn">Submit</button>
+        </div>
+      </fieldset>
+    </div>
+  </section>
+</body>
+</html>
